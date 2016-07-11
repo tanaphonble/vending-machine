@@ -1,11 +1,19 @@
 package com.vending;
 
+import java.util.Date;
+
 /**
  * Created by Tanaphon on 7/11/2016.
  */
 public class VendingMachine {
+
+    private String machineCode;
+    private Date date;
     private int money;
 
+    protected void createTransactionLog(String machineCode, Date date, int money){
+        //เก็บ log ของ transaction
+    }
 
     protected void insertCoin(int money){
         //นับเงินที่ใส่เข้ามาในเครื่อง เก็บใน money
