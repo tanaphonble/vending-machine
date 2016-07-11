@@ -6,10 +6,21 @@ import java.util.Date;
  * Created by Tanaphon on 7/11/2016.
  */
 public class VendingMachine {
-
+    private String latitude;
+    private String longitude;
+    private String[] location = new String[2];
     private String machineCode;
     private Date date;
     private int money;
+
+    protected void setLocation(){
+        this.location[0] = latitude;
+        this.location[1] = longitude;
+    }
+
+    protected String[] getLocation(){
+        return this.location;
+    }
 
     protected void createTransactionLog(String machineCode, Date date, int money){
         //เก็บ log ของ transaction
