@@ -18,6 +18,6 @@ public class VendingMachine {
     }
 
     protected void returnItem(String itemName){
-
+        //จ่ายสินค้า
     }
 }

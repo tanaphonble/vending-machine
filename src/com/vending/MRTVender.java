@@ -4,11 +4,13 @@ package com.vending;
  * Created by Noppharat on 7/11/2016.
  */
 public class MRTVender extends VendingMachine {
+    private int totalCoin;
 
-    protected void mrtCoinCheck(){
+    private int getCoinLeft(){
         //เช็คว่ามีเหรียญ mrt เหลืออยู่ในตู้หรือไม่
+        return totalCoin;
     }
-    protected void showError(){
+    private void showError(){
         //กรณีเครื่องขัดข้อง จะแสดง Error
     }
 
